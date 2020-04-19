@@ -1,2 +1,3 @@
 module codewarsLargeFactorials {
+	requires junit;
 }
