@@ -2,8 +2,12 @@ package codewarsLargeFactorials;
 
 public class LargeFactorial {
 	
-	static int factorial(int n) {
-		return n;
+	static String factorial(int n) {
+		int answerAsInt = 1;
+		for (int i = 2; i <= n; i++) {
+			answerAsInt = answerAsInt * i; 
+		}
+		return Integer.toString(answerAsInt);
 	}
 	
 }

@@ -8,7 +8,8 @@ public class LargeFactorialTest {
 
 	@Test
 	public void factorial_lowNumbers_returnCorrectFactorial() {
-		assertEquals(2, LargeFactorial.factorial(2));
+		assertEquals("2", LargeFactorial.factorial(2));
+		assertEquals("120", LargeFactorial.factorial(5));
 	}
 
 }
