@@ -11,5 +11,10 @@ public class LargeFactorialTest {
 		assertEquals("2", LargeFactorial.factorial(2));
 		assertEquals("120", LargeFactorial.factorial(5));
 	}
-
+	
+	@Test
+	public void factorial_doubleDigitNumbers_returnCorrectFactorial() {
+		assertEquals("1307674368000", LargeFactorial.factorial(15));
+	}
+	
 }
