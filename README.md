@@ -1,4 +1,4 @@
-# Large Factorials (5 KYU)
+# Large Factorial (5 KYU)
 
 Solving [this](https://www.codewars.com/kata/557f6437bf8dcdd135000010/train/java) challenge from codewars.
 
@@ -15,3 +15,22 @@ For more on factorials, see [wiki page](http://en.wikipedia.org/wiki/Factorial)
 **NOTES:**
 
 - The use of BigInteger or BigNumber functions has been disabled, this requires a complex solution
+
+## Tests
+
+Tests written with Junit 4 in the Eclipse IDE.
+
+```
+@Test
+
+public void factorial_lowNumbers_returnCorrectFactorial() {
+		assertEquals("2", LargeFactorial.factorial(2));
+		assertEquals("120", LargeFactorial.factorial(5));
+}
+
+@Test
+public void factorial_doubleDigitNumbers_returnCorrectFactorial() {
+	assertEquals("1307674368000", LargeFactorial.factorial(15));
+	assertEquals("15511210043330985984000000", LargeFactorial.factorial(25));
+}
+```
